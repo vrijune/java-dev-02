@@ -16,7 +16,7 @@ class TestMoreArrays {
     public void testGetPairSumTo() {
         assertEquals("4, 6", moreArrays.getPairSumTo(new int[] {1, 2, 3, 4, 5, 6}, 10));
         assertEquals("0", moreArrays.getPairSumTo(new int[] {1, 2, 3, 4, 5}, 10));
-        assertEquals("8", moreArrays.getPairSumTo(new int[] {8}, 8));
+        assertEquals("0", moreArrays.getPairSumTo(new int[] {8}, 8));
         assertEquals("-10, 2", moreArrays.getPairSumTo(new int[] {-10, 2, 39, 14, 70, 5}, -8));
         assertEquals("2, 3", moreArrays.getPairSumTo(new int[] {2, 3}, 5));
         assertEquals("0, 3", moreArrays.getPairSumTo(new int[] {0, 1, 3}, 3));

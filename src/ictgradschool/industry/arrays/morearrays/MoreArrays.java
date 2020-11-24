@@ -30,8 +30,27 @@ public class MoreArrays {
      */
     public String getPairSumTo(int[] addends, int targetSum) {
         // TODO write statements here
-        return "";
+        int i = 0;
+        int j = 0;
+
+
+        if (addends.length < 2)
+            return "0";
+        else  {
+            for (i = 0; i < addends.length; i++) {
+                for (j = i + 1; j < addends.length; j++) {
+                    if (addends[i] + addends[j] == targetSum)
+                        return String.valueOf(Math.min(addends[i],addends[j]) )+ ", " + String.valueOf(Math.max(addends[1],addends[j]));
+
+                }
+
+            }
+            return "0";
+        }
+
     }
+
+
     /** getPairSumTo(int[], int) => String **/
 
 
@@ -48,10 +67,26 @@ public class MoreArrays {
      *         array
      */
     public String[] removeDuplicates(String[] stringValues) {
-        // TODO write statements here
-        return null;
-    }
+
+        String [] removeduplicates
+       for (int i = 0; stringValues.length > i; i++) {
+           for (int j = i + 1; j < stringValues.length; j++) {
+               if (stringValues[i].equals(stringValues[j]))
+               {
+                   stringValues[j] = null;
+               }
+           }
+       }
+        String[] removeduplicates =
+                return removeduplicates;
+       }
+
     /** removeDuplicates(String[]) => String[] **/
+
+
+
+
+
 
 
     /** C. Write a method findCommonNumbers() that returns an array of
@@ -76,6 +111,10 @@ public class MoreArrays {
      */
     public int[] findCommonNumbers(int[] arrayOne, int[] arrayTwo){
         // TODO write statements here
+
+
+
+
         return null;
     }
     /** findCommonNumbers(int[], int[]) => int[] **/
