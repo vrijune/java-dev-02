@@ -68,18 +68,48 @@ public class MoreArrays {
      */
     public String[] removeDuplicates(String[] stringValues) {
 
-        String [] removeduplicates
+        int lens;
+        String [] removeduplicates = null;
        for (int i = 0; stringValues.length > i; i++) {
            for (int j = i + 1; j < stringValues.length; j++) {
+               for (i = null)
+
                if (stringValues[i].equals(stringValues[j]))
                {
                    stringValues[j] = null;
                }
            }
        }
+
         String[] removeduplicates =
                 return removeduplicates;
        }
+
+
+
+    public String[] removeDuplicates(String[] stringValues) {
+        int len = 0;
+        for (int i = 0; i < stringValues.length; i++) {
+            if (stringValues[i] != null) {
+                len++;
+                for (int j = i+1; j < stringValues.length; j++) {
+                    if (stringValues[i].equals(stringValues[j])) {
+                        stringValues[j] = null;
+                    }
+                }
+            }
+
+        }
+        String[] removed = new String[len];
+        int curr = 0;
+        for (int k = 0; k < stringValues.length; k++) {
+            if (stringValues[k] != null) {
+                removed[curr] = stringValues[k];
+                curr++;
+            }
+        }
+        return removed;
+    }
 
     /** removeDuplicates(String[]) => String[] **/
 
